@@ -1,7 +1,7 @@
 let read = require('read-file');
 const fs = require("fs");
 let readFile = function (filepath) {
-    return read.sync(filepath);
+    return read.sync(filepath, { normalize: true });
 }
 
 let readDataFile1 = function (testName) {
